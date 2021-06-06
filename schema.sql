@@ -1,5 +1,14 @@
+/*
+database for node-crud-mysql
+*/
+--
+-- database - nodecrud
+--
 CREATE DATABASE IF NOT EXISTS nodecrud;
 USE nodecrud;
+--
+-- table for users
+--
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL,
   `name` varchar(150) NOT NULL,
