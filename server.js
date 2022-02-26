@@ -15,7 +15,7 @@ const connection=mysql.createConnection({
     host:'localhost',
     user:'root',
     password:'Localhost123@',
-    database:'nodecrud'
+    database:'nodejscrud'
 });
 connection.connect(function(error){
     if(!!error) console.log(error);
@@ -29,7 +29,7 @@ app.get('/',(req, res) => {
     let query = connection.query(sql, (err, rows) => {
         if(err) throw err;
         res.render('index', {
-            title : 'DWin\'s Node MySql CRUD',
+            title : 'DWin NodeJS-MySql CRUD',
             users : rows
         });
     });
@@ -37,7 +37,7 @@ app.get('/',(req, res) => {
 //get add user page
 app.get('/add',(req, res) => {
     res.render('add', {
-        title : 'DWin\'s Node MySql CRUD'
+        title : 'DWin NodeJS-MySql CRUD'
     });
 });
 //post a user data
@@ -56,7 +56,7 @@ app.get('/edit/:userId',(req, res) => {
     let query = connection.query(sql,(err, result) => {
         if(err) throw err;
         res.render('edit', {
-            title : 'DWin\'s Node MySql CRUD',
+            title : 'DWin NodeJS-MySql CRUD',
             user : result[0]
         });
     });

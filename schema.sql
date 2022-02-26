@@ -4,8 +4,8 @@ database for node-crud-mysql
 --
 -- database - nodecrud
 --
-CREATE DATABASE IF NOT EXISTS nodecrud;
-USE nodecrud;
+CREATE DATABASE IF NOT EXISTS nodejscrud;
+USE nodejscrud;
 --
 -- table for users
 --
