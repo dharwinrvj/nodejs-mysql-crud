@@ -2,7 +2,7 @@
 database for node-crud-mysql
 */
 --
--- database - nodecrud
+-- database - nodejscrud
 --
 CREATE DATABASE IF NOT EXISTS nodejscrud;
 USE nodejscrud;
