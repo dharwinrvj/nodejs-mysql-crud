@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const connection=mysql.createConnection({
     host:'localhost',
     user:'root',
-    password:'Localhost123@',
+    password:'D123@localhost',
     database:'nodejscrud'
 });
 connection.connect(function(error){
